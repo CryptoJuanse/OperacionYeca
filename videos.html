@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">		
+		<title>Feliz cumple!!!</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, mazimum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet">
+    	<script src="https://vjs.zencdn.net/7.2/video.min.js"></script>
+	</head>
+	
+	<body>
+		<header class="header">
+			<div class="contenedor">
+				<h1 class="logo">Disfruta de los videos UwU</h1>
+				<span class="icon-menu" id="btn-menu"></span>
+				<nav class="nav" id="nav">
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+						<li class="menu__item"><a class="menu__link" href="valentina.html">Valentina</a></li>
+						<li class="menu__item"><a class="menu__link" href="omaira.html">Omaira</a></li>
+						<li class="menu__item"><a class="menu__link" href="elmo.html">Elmo</a></li>
+						<li class="menu__item"><a class="menu__link" href="sebas.html">Sebas</a></li>
+						<li class="menu__item"><a class="menu__link select" href="">Videos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        <div class="banner">
+            <img src="video/banner.gif" width="100%" alt="" class="banner__img">
+        </div>
+
+        <main class="main">
+            <div class="contenedor">
+                <section class="info">
+                    <article class="info__columna">
+		    	        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+        	    			<source src="video/valentina.mp4" type="video/mp4">
+    	        		</video>
+                        <h2 class="info__titulo">Valentina 😺</h2>
+                    </article>
+
+                    <article class="info__columna">
+                        <img class="info__img" src="video/omaira.gif" alt="" class="info__img">
+                        <h2 class="info__titulo">Omaira 😻<h2>
+                    </article>
+
+                    <article class="info__columna">
+		    	        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+        	    			<source src="video/nezly.mp4" type="video/mp4">
+    	        		</video>
+                        <h2 class="info__titulo">Nezly 😼</h2>
+                    </article>
+
+                </section>
+                <br> <br> <br> <br>  
+                <section class="info">
+                    <article class="info__columna">
+		    	        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+        	    			<source src="video/elmo.mp4" type="video/mp4">
+    	        		</video>
+                        <h2 class="info__titulo">Elmo 🙃</h2>
+                    </article>
+
+                    <article class="info__columna">
+		    	        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+        	    			<source src="video/sebas.mp4" type="video/mp4">
+    	        		</video>
+                        <h2 class="info__titulo">Sebas 😉</h2>
+                    </article>
+
+                    <article class="info__columna">
+                        <img class="info__img" src="video/anderson.gif" alt="" class="info__img">
+                        <h2 class="info__titulo">Tuquerres 😆</h2>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://twitter.com/JuanC_B40" class="icon-twitter"></a>
+                <a href="https://t.me/JuanC_B40" class="icon-telegram"></a>
+                <a href="https://github.com/juanse-k" class="icon-github"></a>
+                <a href="https://gitlab.com/juanse-k" class="icon-gitlab"></a>
+            </div>
+            <p class="copy"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="margin: auto 40%" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.</p>
+        </footer>
+
+        <script src="js/menu.js"></script>
+       	<script>
+    		var reproductor = videojs('fm-video', {
+	    		fluid: true
+		    });
+    	</script>
+
+	</body>
+
+</html>
